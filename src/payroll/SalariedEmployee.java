@@ -10,6 +10,7 @@ public class SalariedEmployee extends Employee {
 
     @Override
     public double earnings() {
+
         return weeklySalary;
     }
 
