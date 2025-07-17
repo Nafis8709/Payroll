@@ -10,6 +10,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee{
 
     @Override
     public double earnings() {
+
         return baseSalary + super.earnings();
     }
 
@@ -18,13 +19,16 @@ public class BasePlusCommissionEmployee extends CommissionEmployee{
         return String.format("Base Plus Commission Employee: %s\nBase Salary: %.2f", super.toString(), baseSalary);
     }
     public double getBaseSalary() {
+
         return baseSalary;
     }
     public void setBaseSalary(double baseSalary) {
+
         this.baseSalary = baseSalary;
     }
     @Override
     public void increaseBaseSalary() {
+
         setBaseSalary(getBaseSalary() *1.10);
     }
 

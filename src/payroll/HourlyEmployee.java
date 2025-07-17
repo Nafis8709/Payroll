@@ -20,6 +20,6 @@ public class HourlyEmployee extends Employee{
     }
     @Override
     public String toString() {
-        return String.format("Hourly Employee: %s\nHourly Wage: %.2f\nHours Worked: %.2f", super.toString(), hourlyWage, hoursWorked);
+        return String.format("Hourly Employee: %s\nHourly Wage: %.2f\nHours Worked: %.2f\nTotal Wage:", super.toString(), hourlyWage, hoursWorked);
     }
 }

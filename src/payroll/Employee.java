@@ -14,8 +14,6 @@ public abstract class Employee {
     public abstract double earnings();
 
     public String toString() {
-        return String.format("%s\t %s\t", firstname, lastname,"\nSocial Security Number:-%s\n",socialSecurityNumber);
-    }
-    public void increaseBaseSalary(){
+        return String.format("\n%s\t %s\t\nSocial Security Number:-%s", firstname, lastname, socialSecurityNumber);
     }
 }

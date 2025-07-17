@@ -1,6 +1,6 @@
 package payroll;
 
-public class CommissionEmployee extends Employee {
+public abstract class CommissionEmployee extends Employee {
     private double grossSales;
     private double commissionRate;
 
@@ -17,6 +17,8 @@ public class CommissionEmployee extends Employee {
 
     @Override
     public String toString() {
-        return String.format("Commission Employee: %s\nGross Sales: %.2f\nCommission Rate: %.2f", super.toString(), grossSales, (commissionRate * 100)+ "%");
+        return String.format("Commission Employee: %s\nGross Sales: %.2f\nCommission Rate: %.2f\n Total earning:", super.toString(), grossSales, commissionRate);
     }
+
+    public abstract void increaseBaseSalary();
 }
