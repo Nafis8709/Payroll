@@ -6,17 +6,12 @@ public class Main {
 
         ArrayList<Employee> employees = new ArrayList<>();
 
-        employees.add(new SalariedEmployee("Prottoy", "Paul", "123-45-6789", 1000));
-        employees.add(new SalariedEmployee("Roudro", "Borno", "987-65-4321", 1500));
-        employees.add(new HourlyEmployee("Surjo", "Khan", "111-22-3333", 900, 23));
-        employees.add(new HourlyEmployee("Tonmoy", "Shah", "999-88-7777", 750, 45));
-        employees.add(new CommissionEmployee("Ant", "Man", "000-12-3456", 2000, 20) {
-            @Override
-            public void increaseBaseSalary() {
-
-            }
-        });
-        employees.add(new BasePlusCommissionEmployee("Priyan", "Paul", "444-55-6666",3000, 15, 200));
+        employees.add(new SalariedEmployee("Prottoy", "Paul", "123-45-6789", 100));
+        employees.add(new SalariedEmployee("Roudro", "Borno", "987-65-4321", 500));
+        employees.add(new HourlyEmployee("Surjo", "Khan", "11-22-33", 400, 20));
+        employees.add(new HourlyEmployee("Tonmoy", "Shah", "9-88-000", 150, 50));
+        employees.add(new CommissionEmployee("Ant", "Man", "40-12-333", 1000, 20));
+        employees.add(new BasePlusCommissionEmployee("Priyan", "Paul", "444-55-6666",4000, 15, 200));
 
 
         for (Employee e : employees) {
